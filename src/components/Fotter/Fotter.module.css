@@ -1,0 +1,29 @@
+.fotter {
+    width: 100%;
+    background-color: var(--FOOTER-Background-Color);
+    padding: 2rem 8rem;
+    color: var(--FOOTER-Text-Color);
+    font-weight: bold;
+    font-family: "Outfit", sans-serif;
+    font-size: 1.2rem;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+
+    .social_media_container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+    }
+
+    .contato_container {
+        margin: auto;
+    }
+}
