@@ -1,5 +1,6 @@
 .header {
-    padding: 2rem 12rem;
+    width: 100%;
+    padding: 2rem clamp(2rem, 8vw, 12rem);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -7,23 +8,41 @@
 
 .buttons_container {
     display: flex;
-    list-style: none;
     align-items: center;
     justify-content: center;
     gap: 4rem;
+    list-style: none;
 }
 
-.buttons_container li {
-    font-family: "Outfit", sans-serif;
+.buttons_container li a {
+    display: inline-block;
     color: var(--HEADER-Text-Color);
     font-size: 2rem;
     font-weight: bold;
+    text-decoration: none;
     text-shadow: 2px 2px #000000;
+
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: transform 0.2s ease;
 }
 
-.buttons_container li:hover {
-    transform: scale(1.2);
-    /* transform: translateY(-10px); */
+.buttons_container li a:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 1200px) {
+    .header {
+        padding: 1.5rem 2rem;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .buttons_container {
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .buttons_container li a {
+        font-size: 1.8rem;
+    }
 }

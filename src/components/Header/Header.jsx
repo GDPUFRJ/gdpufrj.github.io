@@ -1,30 +1,25 @@
 import styles from "./Header.module.css";
+import gdpLogo from "../../assets/GDP_logo.svg";
 
 const Header = () => {
   return (
-    <div className={styles.header}>
-      <img
-        src="src\assets\GDP_logo.svg"
-        width={138}
-        height={138}
-        style={{ fill: "#ffffff" }}
-        alt="Logo GDP"
-      />
+    <header className={styles.header}>
+      <img src={gdpLogo} width={138} height={138} alt="Logo GDP" />
       <ul className={styles.buttons_container}>
         <li>
-          <a>Home</a>
+          <a href="#">Home</a>
         </li>
         <li>
-          <a>Projetos</a>
+          <a href="#">Projetos</a>
         </li>
         <li>
-          <a>Laje</a>
+          <a href="#">Laje</a>
         </li>
         <li>
-          <a>Estúdios</a>
+          <a href="#">Estúdios</a>
         </li>
       </ul>
-    </div>
+    </header>
   );
 };
 

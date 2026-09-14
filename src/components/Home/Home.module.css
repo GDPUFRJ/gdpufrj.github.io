@@ -1,6 +1,5 @@
 .home {
-    height: 100vh;
-    padding: 2rem 12rem;
+    padding: 2rem clamp(2rem, 8vw, 12rem) 0;
 }
 
 .content {
@@ -8,23 +7,58 @@
     width: 100%;
     height: 100%;
     border-radius: 3rem 3rem 0 0;
-    padding: 2rem 10rem;
+    padding: 2rem clamp(2rem, 6vw, 10rem);
     display: flex;
-    gap: 5rem;
     align-items: center;
     justify-content: space-around;
+    gap: 5rem;
+}
 
-    .text_container {
-        font-family: "Outfit", sans-serif;
+.logo {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    flex-shrink: 1;
+}
 
-        h1 {
-            font-size: 60px;
-            margin-bottom: 2rem;
-        }
+.text_container {
+    max-width: 700px;
+}
 
-        p {
-            font-size: 24px;
-            margin-bottom: 2rem;
-        }
+.text_container h1 {
+    font-size: clamp(2.5rem, 4vw, 3.75rem);
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+    color: var(--LIGHT-Important-Text-Color);
+}
+
+.text_container h2 {
+    font-size: clamp(1.5rem, 2.5vw, 2.25rem);
+    margin-bottom: 2rem;
+    line-height: 1.3;
+    color: var(--LIGHT-Text-Color);
+}
+
+.text_container p {
+    font-size: clamp(1.1rem, 1.5vw, 1.5rem);
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    color: var(--LIGHT-Text-Color);
+}
+
+.text_container p:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 1200px) {
+    .content {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .logo {
+        max-width: 350px;
     }
 }
