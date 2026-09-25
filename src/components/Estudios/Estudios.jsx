@@ -107,8 +107,6 @@ const Estudios = () => {
         <div className={styles.intro}>
           <h1>Estúdios</h1>
 
-          <h2>Grupo de Desenvolvimento de Jogos Eletrônicos</h2>
-
           <p>
             Ao longo dos anos, integrantes da GDP UFRJ se juntaram e levaram seu trabalho em equipe do
             ambiente acadêmico para o ambiente profissional e, em conjunto com outros membros, montaram seus próprios estúdios de jogos.
@@ -117,7 +115,14 @@ const Estudios = () => {
         </div>
 
         <section className={styles.estudios_section}>
-
+            {estudioCards.map((card) => (
+              <div className={styles.estudios_card}>
+                <img src={card.logo} alt={`Logo ${card.name}`} />
+                <div className={styles.estudios_card_info}>
+                    <h2>{card.name}</h2>
+                </div>
+              </div>
+            ))}
           
         </section>
       </section>

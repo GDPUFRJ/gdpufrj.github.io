@@ -69,8 +69,14 @@ const Footer = () => {
 
       <section className={styles.filiado_container}>
         <h2>Filiado à</h2>
-
-        <img src={acjogosLogo} alt="Logo da ACJogos" />
+        <a
+          href="https://rj.acjogos.com.br/"
+          aria-label="Website ACJogos-RJ"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={acjogosLogo} alt="Logo da ACJogos-RJ" />
+        </a>
       </section>
     </footer>
   );

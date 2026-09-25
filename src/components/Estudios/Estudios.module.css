@@ -5,26 +5,49 @@
 .content {
     background-color: var(--LIGHT-Background-Color);
     border-radius: 3rem 3rem 0 0;
-    padding: 5rem clamp(2rem, 6vw, 10rem) 5rem;
+    padding: 2rem clamp(2rem, 6vw, 10rem) 2rem;
 }
 
 .intro {
-    margin-top: 8rem;
     text-align: center;
 }
 
-.intro h2 {
+.intro h1 {
     font-size: clamp(1.75rem, 3vw, 2.5rem);
     margin-bottom: 1rem;
     color: var(--LIGHT-Important-Text-Color);
 }
 
 .intro p {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto 2.5rem;
     font-size: clamp(1rem, 1.3vw, 1.25rem);
     line-height: 1.5;
     color: var(--LIGHT-Text-Color);
+}
+
+.estudios_section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.estudios_card {
+    background-color: var(--LIGHT-Card);
+    border-radius: 3rem 3rem 0 0;
+    display: flex;
+}
+
+.estudios_card img{
+    width: 138px;
+    height: 138px;
+    border-radius: 15%;
+}
+
+.estudios_card_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .areas {
