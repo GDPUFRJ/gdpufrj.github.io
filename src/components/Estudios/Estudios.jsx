@@ -1,0 +1,128 @@
+import styles from "./Estudios.module.css";
+
+import oduLogo from "../../assets/estudios/Odu.png"
+import garoaLogo from "../../assets/estudios/Garoa.png"
+import verbenaLogo from "../../assets/estudios/Verbena.png"
+import cottoncatLogo from "../../assets/estudios/CottonCat.png"
+import hexfrogLogo from "../../assets/estudios/HexFrog.png"
+
+import itchioLogo from "../../assets/redes/itchio.svg";
+import instagramLogo from "../../assets/redes/instagram.svg";
+import websiteLogo from "../../assets/redes/website.svg";
+import steamLogo from "../../assets/redes/steam.svg";
+import tiktokLogo from "../../assets/redes/tiktok.svg";
+
+const estudioCards = [
+    {
+        name: "Odu Studios",
+        logo: oduLogo,
+        redes: [
+            {
+                name: "Website",
+                logo: websiteLogo,
+                url: "https://www.odustudios.com.br"
+            },
+            {
+                name: "Steam",
+                logo: steamLogo,
+                url: "https://store.steampowered.com/curator/45613930"
+            },
+            {
+                name: "Instagram",
+                logo: instagramLogo,
+                url: "https://www.instagram.com/odustudios"
+            }
+        ] 
+    },
+    {
+        name: "Garoa Studios",
+        logo: garoaLogo,
+        redes: [
+            {
+                name: "Website",
+                logo: websiteLogo,
+                url: "https://garoastudios.com/"
+            },
+            {
+                name: "Steam",
+                logo: steamLogo,
+                url: "https://store.steampowered.com/publisher/garoastudios"
+            },
+            {
+                name: "Instagram",
+                logo: instagramLogo,
+                url: "https://www.instagram.com/garoastudios"
+            }
+        ] 
+    },
+    {
+        name: "Verbena Studios",
+        logo: verbenaLogo,
+        redes: [
+            {
+                name: "Itch.io",
+                logo: itchioLogo,
+                url: "https://verbenastudio.itch.io/"
+            },
+            {
+                name: "Instagram",
+                logo: instagramLogo,
+                url: "https://www.instagram.com/verbenagamestudio/"
+            }
+        ] 
+    },
+    {
+        name: "Cotton Cat",
+        logo: cottoncatLogo,
+        redes: [
+            {
+                name: "Itch.io",
+                logo: itchioLogo,
+                url: "https://cottoncatstudios.itch.io/"
+            },
+            {
+                name: "Tiktok",
+                logo: tiktokLogo,
+                url: "https://www.tiktok.com/@cottoncatstudios"
+            }
+        ] 
+    },
+    {
+        name: "Hex Frog",
+        logo: hexfrogLogo,
+        redes: [
+            {
+                name: "Itch.io",
+                logo: itchioLogo,
+                url: "https://hexfroggames.itch.io/"
+            }
+        ] 
+    }
+]
+
+const Estudios = () => {
+  return (
+    <main className={styles.home}>
+      <section className={styles.content}>
+        <div className={styles.intro}>
+          <h1>Estúdios</h1>
+
+          <h2>Grupo de Desenvolvimento de Jogos Eletrônicos</h2>
+
+          <p>
+            Ao longo dos anos, integrantes da GDP UFRJ se juntaram e levaram seu trabalho em equipe do
+            ambiente acadêmico para o ambiente profissional e, em conjunto com outros membros, montaram seus próprios estúdios de jogos.
+          </p>
+
+        </div>
+
+        <section className={styles.estudios_section}>
+
+          
+        </section>
+      </section>
+    </main>
+  );
+};
+
+export default Estudios;

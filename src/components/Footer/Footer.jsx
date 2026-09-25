@@ -1,34 +1,41 @@
 import styles from "./Footer.module.css";
-import itchioLogo from "../../assets/itchio.svg";
-import instagramLogo from "../../assets/instagram.svg";
-import twitterXLogo from "../../assets/twitter-x.svg";
-import blueskyLogo from "../../assets/bluesky.svg";
+import itchioLogo from "../../assets/redes/itchio.svg";
+import instagramLogo from "../../assets/redes/instagram.svg";
+import youtubeLogo from "../../assets/redes/youtube.svg";
+import twitterXLogo from "../../assets/redes/twitter-x.svg";
+import blueskyLogo from "../../assets/redes/bluesky.svg";
 import acjogosLogo from "../../assets/acjogos.svg";
 
 const socialMedia = [
   {
     name: "Itch.io",
-    ariaLabel: "Itch.io do GDP UFRJ",
+    ariaLabel: "Itch.io da GDP UFRJ",
     logo: itchioLogo,
-    url: "#",
+    url: "https://gdpufrj.itch.io/",
   },
   {
     name: "Instagram",
-    ariaLabel: "Instagram do GDP UFRJ",
+    ariaLabel: "Instagram da GDP UFRJ",
     logo: instagramLogo,
-    url: "#",
+    url: "https://www.instagram.com/gdpufrj/",
+  },
+  {
+    name: "Youtube",
+    ariaLabel: "Youtube da GDP UFRJ",
+    logo: youtubeLogo,
+    url: "https://www.youtube.com/@GDPUFRJ",
   },
   {
     name: "Twitter/X",
-    ariaLabel: "Twitter/X do GDP UFRJ",
+    ariaLabel: "Twitter/X da GDP UFRJ",
     logo: twitterXLogo,
-    url: "#",
+    url: "https://x.com/gdpufrj",
   },
   {
     name: "Bluesky",
-    ariaLabel: "Bluesky do GDP UFRJ",
+    ariaLabel: "Bluesky da GDP UFRJ",
     logo: blueskyLogo,
-    url: "#",
+    url: "https://bsky.app/profile/gdpufrj.bsky.social",
   },
 ];
 
