@@ -117,9 +117,25 @@ const Estudios = () => {
         <section className={styles.estudios_section}>
             {estudioCards.map((card) => (
               <div className={styles.estudios_card}>
-                <img src={card.logo} alt={`Logo ${card.name}`} />
+                <img src={card.logo} alt={`Logo ${card.name}`} className={styles.estudios_card_logo}/>
                 <div className={styles.estudios_card_info}>
                     <h2>{card.name}</h2>
+                    <div className={styles.social_media_container}>
+                        <ul>
+                        {card.redes.map((social) => (
+                            <li key={social.name}>
+                            <a
+                                href={social.url}
+                                aria-label={`${social.name} - ${card.name}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <img src={social.logo} alt={`Logo ${social.name}`} width={50} height={50} />
+                            </a>
+                            </li>
+                        ))}
+                        </ul>
+                    </div>
                 </div>
               </div>
             ))}
