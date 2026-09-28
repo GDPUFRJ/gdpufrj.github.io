@@ -1,5 +1,5 @@
 .home {
-    padding: 2rem clamp(2rem, 8vw, 12rem) 0;
+    padding: 0 clamp(2rem, 8vw, 12rem) 0;
 }
 
 .content {
@@ -33,7 +33,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 2rem
+    gap: 2rem;
 }
 
 .estudios_card {

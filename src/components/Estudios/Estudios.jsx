@@ -56,7 +56,7 @@ const estudioCards = [
         ] 
     },
     {
-        name: "Verbena Studios",
+        name: "Verbena Studio",
         logo: verbenaLogo,
         redes: [
             {
