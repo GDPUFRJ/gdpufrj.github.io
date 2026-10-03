@@ -1,5 +1,6 @@
 import styles from "./Header.module.css";
 import gdpLogo from "../../assets/GDP_logo.svg";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -7,14 +8,17 @@ const Header = () => {
       <img src={gdpLogo} width={138} height={138} alt="Logo GDP" />
       <ul className={styles.buttons_container}>
         <li>
-          <a href="/">Home</a>
+          <Link to="/">Home</Link>
         </li>
+
         <li>
           <a href="#">Projetos</a>
         </li>
+
         <li>
-          <a href="/laje">Laje</a>
+          <Link to="/laje">Laje</Link>
         </li>
+
         <li>
           <a href="#">Estúdios</a>
         </li>
