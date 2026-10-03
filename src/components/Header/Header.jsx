@@ -7,13 +7,13 @@ const Header = () => {
       <img src={gdpLogo} width={138} height={138} alt="Logo GDP" />
       <ul className={styles.buttons_container}>
         <li>
-          <a href="#">Home</a>
+          <a href="/">Home</a>
         </li>
         <li>
           <a href="#">Projetos</a>
         </li>
         <li>
-          <a href="#">Laje</a>
+          <a href="/laje">Laje</a>
         </li>
         <li>
           <a href="#">Estúdios</a>
