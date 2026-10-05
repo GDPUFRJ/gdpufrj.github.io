@@ -130,7 +130,7 @@ const Estudios = () => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                <img src={social.logo} alt={`Logo ${social.name}`} width={50} height={50} />
+                                <img className="svg_dark" src={social.logo} alt={`Logo ${social.name}`} width={50} height={50} />
                             </a>
                             </li>
                         ))}

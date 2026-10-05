@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <header className={styles.header}>
-      <img src={gdpLogo} width={138} height={138} alt="Logo GDP" />
+      <img className="svg_light" src={gdpLogo} width={138} height={138} alt="Logo GDP" />
       <ul className={styles.buttons_container}>
         <li>
           <Link to="/">Home</Link>
