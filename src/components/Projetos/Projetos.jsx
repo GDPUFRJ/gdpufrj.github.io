@@ -4,10 +4,16 @@ import styles from "./Projetos.module.css";
 
 const Projetos = ({ games }) => {
   const [category, setCategory] = useState("Todos");
+  const [search, setSearch] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
 
   function selectCategory(newCategory) {
     setCategory(newCategory);
+    setCurrentPage(1);
+  }
+
+  function handleSearch(event) {
+    setSearch(event.target.value);
     setCurrentPage(1);
   }
 
@@ -16,11 +22,12 @@ const Projetos = ({ games }) => {
       <section className={styles.content}>
         <div className={styles.intro}>
           <h1>Projetos</h1>
+
           <p>
-            Todos os projetos da GDP estão hospedados no Itch.io e o organizamos
-            aqui em categorias para facilitar a busca. Algumas categorias também
-            são compostas por jogos feitos por pessoas de fora da GDP, no caso
-            de participantes de eventos e processos seletivos.
+            Todos os projetos da GDP estão hospedados no Itch.io e os
+            organizamos aqui em categorias para facilitar a busca. Algumas
+            categorias também são compostas por jogos feitos por pessoas de fora
+            da GDP, no caso de participantes de eventos e processos seletivos.
           </p>
         </div>
 
@@ -51,9 +58,24 @@ const Projetos = ({ games }) => {
             </button>
           </div>
 
+          <p className={styles.explication}>
+            Explicação sobre a categoria selecionada exceto Geral/Todos
+          </p>
+
+          <div className={styles.search_container}>
+            <input
+              type="text"
+              placeholder="Pesquisa..."
+              value={search}
+              onChange={handleSearch}
+              className={styles.search_input}
+            />
+          </div>
+
           <GamesList
             games={games}
             category={category}
+            search={search}
             currentPage={currentPage}
             setCurrentPage={setCurrentPage}
           />
