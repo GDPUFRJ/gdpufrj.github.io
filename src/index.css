@@ -17,7 +17,7 @@
   --gdp-som: #523E8C;
   --gdp-vermelho-laje: #EB5C64;
 
-  --SHADOW: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  --SHADOW: rgba(0, 0, 0, 0.24);
 
   --font-primary: "Outfit", sans-serif;
 }

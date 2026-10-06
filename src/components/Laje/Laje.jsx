@@ -6,8 +6,11 @@ import lajeGalera from "../../assets/fotosLaje/LAJE_galera.JPG";
 import lajePalestra1 from "../../assets/fotosLaje/LAJE_palestra1.png";
 import lajePalestra2 from "../../assets/fotosLaje/LAJE_palestra2.png";
 import lajePalestra3 from "../../assets/fotosLaje/LAJE_palestra3.png";
+import lajeGameJam1 from "../../assets/fotosLaje/LAJE_gamejam1.png";
+import lajeGameJam2 from "../../assets/fotosLaje/LAJE_gamejam2.png";
+import lajeGameJam3 from "../../assets/fotosLaje/LAJE_gamejam3.png";
 
-const Laje = ({ games }) => {
+const Laje = ({games}) => {
   return (
     <main className={styles.home}>
       <section className={styles.content}>
@@ -82,28 +85,25 @@ const Laje = ({ games }) => {
         </div>
 
         <div className={styles.etapa_section}>
-          <h2>Game Jam</h2>
-          <p>
-            Na segunda etapa são formados diversos grupos entre os participantes
-            da LAJE. Através de um ciclo de planejamento e produção, as equipes
-            irão desenvolver seus próprios jogos em uma Game Jam, uma maratona
-            de poucos dias, e apresentar seus projetos em forma de pitch no
-            encerramento da LAJE.
-          </p>
-          <div className={styles.etapa_galeria}>
-            <img
-              src={lajePalestra1}
-              alt="Captura de tela da palestra 'O Essencial de Pixel Art para Jogos'"
-            />
-            <img
-              src={lajePalestra2}
-              alt="Captura de tela da palestra 'Prisma Game Lab apresenta: Criação de personagens'"
-            />
-            <img
-              src={lajePalestra3}
-              alt="Mesa redonda no palco da Inovateca na LAJE 2024"
-            />
-          </div>
+            <h2>Game Jam</h2>
+            <p>
+                Na segunda etapa são formados diversos grupos entre os participantes da LAJE. Através de um ciclo de planejamento e produção, as equipes irão desenvolver seus próprios jogos em uma Game Jam,
+                uma maratona de poucos dias, e apresentar seus projetos em forma de pitch no encerramento da LAJE.
+            </p>
+            <div className={styles.etapa_galeria}>
+                <img
+                    src={lajeGameJam1}
+                    alt="Captura de tela da palestra 'O Essencial de Pixel Art para Jogos'"
+                />
+                <img
+                    src={lajeGameJam2}
+                    alt="Captura de tela da palestra 'Prisma Game Lab apresenta: Criação de personagens'"
+                />
+                <img
+                    src={lajeGameJam3}
+                    alt="Mesa redonda no palco da Inovateca na LAJE 2024"
+                />
+            </div>
         </div>
 
         <div className={styles.games_section}>
