@@ -37,6 +37,10 @@
         gap: 2rem;
     }
 
+    .header img {
+        display: none;
+    }
+
     .buttons_container {
         gap: 2rem;
         flex-wrap: wrap;

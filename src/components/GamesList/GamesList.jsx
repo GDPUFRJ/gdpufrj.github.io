@@ -1,4 +1,5 @@
 import styles from "./GamesList.module.css";
+import capaDefault from "../../assets/capa_default.png"
 
 function checkCategory(collection_name, category) {
   switch (category) {
@@ -56,7 +57,7 @@ const GamesList = ({ games, category, currentPage, setCurrentPage }) => {
         {currentGames.map((item) => (
           <li key={item.url}>
             <a href={item.url} aria-label={item.title} target="_blank">
-              <img src={item.cover_url} alt={`Capa ${item.title}`} />
+              <img src={item.cover_url ? item.cover_url : capaDefault} alt={`Capa ${item.title}`} />
             </a>
 
             <h2>{item.title}</h2>
