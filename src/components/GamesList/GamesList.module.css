@@ -113,6 +113,13 @@
     transform: scale(1.08);
 }
 
+.noResults {
+    width: 100%;
+    padding: 3rem 1rem;
+
+    text-align: center;
+    font-size: 1.1rem;
+}
 
 @media (max-width: 1200px) {
     .gameslist {

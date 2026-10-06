@@ -1,6 +1,5 @@
-import { useState } from "react";
 import styles from "./GamesList.module.css";
-import capaDefault from "../../assets/capa_default.png"
+import capaDefault from "../../assets/capa_default.png";
 
 function checkCategory(collection_name, category) {
   switch (category) {
@@ -36,14 +35,24 @@ function checkCategory(collection_name, category) {
   }
 }
 
-const GamesList = ({ games, category }) => {
-  const [currentPage, setCurrentPage] = useState(1);
-
+const GamesList = ({
+  games,
+  category,
+  search = "",
+  currentPage,
+  setCurrentPage,
+}) => {
   const gamesPerPage = 9;
 
-  const filteredGames = games.filter((item) =>
-    checkCategory(item.collection_name, category),
-  );
+  const filteredGames = games.filter((item) => {
+    const matchesCategory = checkCategory(item.collection_name, category);
+
+    const matchesSearch = item.title
+      ?.toLowerCase()
+      .includes(search.toLowerCase());
+
+    return matchesCategory && matchesSearch;
+  });
 
   const totalPages = Math.max(
     1,
@@ -61,17 +70,24 @@ const GamesList = ({ games, category }) => {
 
   return (
     <section className={styles.content}>
-      <ul className={styles.gameslist}>
-        {currentGames.map((item) => (
-          <li key={item.url}>
-            <a href={item.url} aria-label={item.title} target="_blank">
-              <img src={item.cover_url ? item.cover_url : capaDefault} alt={`Capa ${item.title}`} />
-            </a>
+      {filteredGames.length > 0 ? (
+        <ul className={styles.gameslist}>
+          {currentGames.map((item) => (
+            <li key={item.url}>
+              <a href={item.url} aria-label={item.title} target="_blank">
+                <img
+                  src={item.cover_url ? item.cover_url : capaDefault}
+                  alt={`Capa ${item.title}`}
+                />
+              </a>
 
-            <h2>{item.title}</h2>
-          </li>
-        ))}
-      </ul>
+              <h2>{item.title}</h2>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p className={styles.noResults}>Nenhum projeto encontrado.</p>
+      )}
 
       {totalPages > 1 && (
         <div className={styles.pagination}>
