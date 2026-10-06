@@ -94,3 +94,19 @@
     }
 
 }
+
+@media (max-width: 620px) {
+    .estudios_card {
+        flex-direction: column;
+        min-width: 270px;
+        align-items: center;
+    }
+
+    .social_media_container ul{
+        justify-content: center;
+    }
+
+    .estudios_card_info h2 {
+        text-align: center;
+    }
+}

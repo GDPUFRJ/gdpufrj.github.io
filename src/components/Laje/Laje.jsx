@@ -6,7 +6,9 @@ import lajeGalera from "../../assets/fotosLaje/LAJE_galera.JPG";
 import lajePalestra1 from "../../assets/fotosLaje/LAJE_palestra1.png";
 import lajePalestra2 from "../../assets/fotosLaje/LAJE_palestra2.png";
 import lajePalestra3 from "../../assets/fotosLaje/LAJE_palestra3.png";
-
+import lajeGameJam1 from "../../assets/fotosLaje/LAJE_gamejam1.png";
+import lajeGameJam2 from "../../assets/fotosLaje/LAJE_gamejam2.png";
+import lajeGameJam3 from "../../assets/fotosLaje/LAJE_gamejam3.png";
 
 const Laje = ({games}) => {
   return (
@@ -81,15 +83,15 @@ const Laje = ({games}) => {
             </p>
             <div className={styles.etapa_galeria}>
                 <img
-                    src={lajePalestra1}
+                    src={lajeGameJam1}
                     alt="Captura de tela da palestra 'O Essencial de Pixel Art para Jogos'"
                 />
                 <img
-                    src={lajePalestra2}
+                    src={lajeGameJam2}
                     alt="Captura de tela da palestra 'Prisma Game Lab apresenta: Criação de personagens'"
                 />
                 <img
-                    src={lajePalestra3}
+                    src={lajeGameJam3}
                     alt="Mesa redonda no palco da Inovateca na LAJE 2024"
                 />
             </div>
