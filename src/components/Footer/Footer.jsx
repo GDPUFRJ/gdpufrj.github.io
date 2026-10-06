@@ -54,7 +54,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={social.logo} alt={`Logo ${social.name}`} width={60} height={60} />
+                <img className="svg_light" src={social.logo} alt={`Logo ${social.name}`} width={60} height={60} />
               </a>
             </li>
           ))}

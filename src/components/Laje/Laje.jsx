@@ -1,5 +1,6 @@
 import styles from "./Laje.module.css";
 import lajeLogo from "../../assets/LAJE_logo.svg";
+import GamesList from "../GamesList/GamesList";
 
 import lajeGalera from "../../assets/fotosLaje/LAJE_galera.JPG";
 import lajePalestra1 from "../../assets/fotosLaje/LAJE_palestra1.png";
@@ -7,7 +8,7 @@ import lajePalestra2 from "../../assets/fotosLaje/LAJE_palestra2.png";
 import lajePalestra3 from "../../assets/fotosLaje/LAJE_palestra3.png";
 
 
-const Laje = () => {
+const Laje = ({games}) => {
   return (
     <main className={styles.home}>
       <section className={styles.content}>
@@ -93,6 +94,12 @@ const Laje = () => {
                 />
             </div>
         </div>
+
+        <div className={styles.games_section}>
+            <h2>Jogos feitos na LAJE</h2>
+            <GamesList games={games} category="LAJE"/>
+        </div>
+
       </section>
     </main>
   );
