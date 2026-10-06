@@ -16,6 +16,12 @@ const Projetos = ({ games }) => {
       <section className={styles.content}>
         <div className={styles.intro}>
           <h1>Projetos</h1>
+          <p>
+            Todos os projetos da GDP estão hospedados no Itch.io e o organizamos
+            aqui em categorias para facilitar a busca. Algumas categorias também
+            são compostas por jogos feitos por pessoas de fora da GDP, no caso
+            de participantes de eventos e processos seletivos.
+          </p>
         </div>
 
         <section className={styles.projects_section}>
