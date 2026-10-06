@@ -27,52 +27,61 @@ const Laje = ({games}) => {
             <h2>Laboratório de Aprendizado de Jogos Eletrônicos</h2>
 
             <p>
-              Idealizado e organizado pela GDP desde 2021, a LAJE é um evento anual focado em disseminar o conhecimento e abrir oportunidade para pessoas
-              que nunca tiveram contato a criação de jogos eletrônicos. Organizado em 2 etapas, o evento dissemina tanto conhecimento técnico quanto prático
-              para impulsionar o primeiro jogo de diversas pessoas.
+              Idealizado e organizado pela GDP desde 2021, a LAJE é um evento
+              anual focado em disseminar o conhecimento e abrir oportunidade
+              para pessoas que nunca tiveram contato a criação de jogos
+              eletrônicos. Organizado em 2 etapas, o evento dissemina tanto
+              conhecimento técnico quanto prático para impulsionar o primeiro
+              jogo de diversas pessoas.
             </p>
-
           </div>
         </div>
 
         <div className={styles.passion_section}>
-            <section className={styles.text_container}>
-                <h2>Paixão pelo conhecimento</h2>
+          <section className={styles.text_container}>
+            <h2>Paixão pelo conhecimento</h2>
 
-                <p>
-                    Com o intuito de passar o conhecimento aprendido dentro da GDP, nossos integrantes buscam trazer a melhor experiência para quem nunca se aventurou
-                    dentro da área, independente do seu curso de formação. 
-                </p>
-            </section>
+            <p>
+              Com o intuito de passar o conhecimento aprendido dentro da GDP,
+              nossos integrantes buscam trazer a melhor experiência para quem
+              nunca se aventurou dentro da área, independente do seu curso de
+              formação.
+            </p>
+          </section>
 
-            <img
+          <img
             src={lajeGalera}
             alt="Integrantes da GDP em frente a Inovateca após evento de 2026"
             className={styles.logo}
-            />
-
+          />
         </div>
 
         <div className={styles.etapa_section}>
-            <h2>Palestras e Oficinas</h2>
-            <p>
-                Na primeira etapa do evento são realizadas oficinas e palestras, online e presenciais, abertas ao público e ministradas por convidados, integrantes, ex-integrantes da GDP.
-                Nossas palestras ficam disponibilizadas no <a href="https://www.youtube.com/@GDPUFRJ" target="_blank">canal do Youtube da GDP</a> para que possam ser vistas mesmo após o fim do evento.
-            </p>
-            <div className={styles.etapa_galeria}>
-                <img
-                    src={lajePalestra1}
-                    alt="Captura de tela da palestra 'O Essencial de Pixel Art para Jogos'"
-                />
-                <img
-                    src={lajePalestra2}
-                    alt="Captura de tela da palestra 'Prisma Game Lab apresenta: Criação de personagens'"
-                />
-                <img
-                    src={lajePalestra3}
-                    alt="Mesa redonda no palco da Inovateca na LAJE 2024"
-                />
-            </div>
+          <h2>Palestras e Oficinas</h2>
+          <p>
+            Na primeira etapa do evento são realizadas oficinas e palestras,
+            online e presenciais, abertas ao público e ministradas por
+            convidados, integrantes, ex-integrantes da GDP. Nossas palestras
+            ficam disponibilizadas no{" "}
+            <a href="https://www.youtube.com/@GDPUFRJ" target="_blank">
+              canal do Youtube da GDP
+            </a>{" "}
+            para que possam ser vistas mesmo após o fim do evento.
+          </p>
+          <div className={styles.etapa_galeria}>
+            <img
+              src={lajePalestra1}
+              alt="Captura de tela da palestra 'O Essencial de Pixel Art para Jogos'"
+            />
+            <img
+              src={lajePalestra2}
+              alt="Captura de tela da palestra 'Prisma Game Lab apresenta: Criação de personagens'"
+            />
+            <img
+              src={lajePalestra3}
+              alt="Mesa redonda no palco da Inovateca na LAJE 2024"
+            />
+          </div>
         </div>
 
         <div className={styles.etapa_section}>
@@ -98,10 +107,9 @@ const Laje = ({games}) => {
         </div>
 
         <div className={styles.games_section}>
-            <h2>Jogos feitos na LAJE</h2>
-            <GamesList games={games} category="LAJE"/>
+          <h2>Jogos feitos na LAJE</h2>
+          <GamesList games={games} category="Laje" />
         </div>
-
       </section>
     </main>
   );

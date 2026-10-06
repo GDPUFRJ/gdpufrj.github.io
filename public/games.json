@@ -1407,9 +1407,339 @@
       "short_description": null,
       "collection_name": "Processos Seletivos Ps",
       "collection_url": "https://itch.io/c/7954783/processos-seletivos-ps"
+    },
+    {
+      "title": "Mãe, o WiFi caiu!",
+      "url": "https://ykv2.itch.io/mae-o-wifi-caiu",
+      "cover_url": "https://img.itch.zone/aW1nLzI5MDIxMDEwLnBuZw==/315x250%23c/1C%2Fk4C.png",
+      "author": "Ykv2",
+      "price": null,
+      "tags": [],
+      "short_description": "O que uma criança faz quando está sem Wi-Fi?",
+      "collection_name": "Laje",
+      "collection_url": "https://itch.io/c/7947320/laje"
+    },
+    {
+      "title": "Enquanto houver sinal",
+      "url": "https://whatsaap2.itch.io/enquanto-houver-sinal",
+      "cover_url": "https://img.itch.zone/aW1nLzI5MDIwNDM3LnBuZw==/315x250%23c/qp1dYT.png",
+      "author": "Whatsaap2",
+      "price": null,
+      "tags": [],
+      "short_description": null,
+      "collection_name": "Laje",
+      "collection_url": "https://itch.io/c/7947320/laje"
+    },
+    {
+      "title": "Sem Sinal, Reconectando...",
+      "url": "https://jho-on.itch.io/sem-sinal-reconectando",
+      "cover_url": "https://img.itch.zone/aW1nLzI5MDIyNjkzLnBuZw==/315x250%23c/5H5TCf.png",
+      "author": "jho---on",
+      "price": null,
+      "tags": [],
+      "short_description": null,
+      "collection_name": "Laje",
+      "collection_url": "https://itch.io/c/7947320/laje"
+    },
+    {
+      "title": "Uma Tarde No Egito",
+      "url": "https://cordeiro-bruno.itch.io/laje",
+      "cover_url": "https://img.itch.zone/aW1nLzE3NzM3NzYyLnBuZw==/315x250%23c/pa2KEZ.png",
+      "author": "Bruno",
+      "price": null,
+      "tags": [],
+      "short_description": null,
+      "collection_name": "Laje",
+      "collection_url": "https://itch.io/c/7947320/laje"
+    },
+    {
+      "title": "GemSmith Emporium",
+      "url": "https://filomolusca.itch.io/gemsmith-emporium",
+      "cover_url": "https://img.itch.zone/aW1nLzE3NzYwODU1LmpwZw==/315x250%23c/6PAyp7.jpg",
+      "author": "Filomolusca",
+      "price": null,
+      "tags": [],
+      "short_description": null,
+      "collection_name": "Laje",
+      "collection_url": "https://itch.io/c/7947320/laje"
+    },
+    {
+      "title": "Shattered",
+      "url": "https://tubajao.itch.io/shattered",
+      "cover_url": "https://img.itch.zone/aW1nLzE3NzUzOTUwLnBuZw==/315x250%23c/8jcNnl.png",
+      "author": "João Gabriel",
+      "price": null,
+      "tags": [],
+      "short_description": null,
+      "collection_name": "Laje",
+      "collection_url": "https://itch.io/c/7947320/laje"
+    },
+    {
+      "title": "Caminho das Pedras Místicas",
+      "url": "https://j3rky0.itch.io/gem",
+      "cover_url": "https://img.itch.zone/aW1nLzE3NzUzMTgyLnBuZw==/315x250%23c/2F3gvR.png",
+      "author": "j3rky0",
+      "price": null,
+      "tags": [],
+      "short_description": null,
+      "collection_name": "Laje",
+      "collection_url": "https://itch.io/c/7947320/laje"
+    },
+    {
+      "title": "Chrono Keeper",
+      "url": "https://leobardineo.itch.io/chrono-keeper",
+      "cover_url": "https://img.itch.zone/aW1nLzE3NzU0ODY1LnBuZw==/315x250%23c/N3mbBD.png",
+      "author": "leobardineo",
+      "price": null,
+      "tags": [],
+      "short_description": "Um top-down sobre uma guardiã da gema do tempo e sua aventura para recuperá-la | Grupo 2 - LAJE 2024 💎",
+      "collection_name": "Laje",
+      "collection_url": "https://itch.io/c/7947320/laje"
+    },
+    {
+      "title": "Gemshard",
+      "url": "https://marialuiza-pin.itch.io/gemshard",
+      "cover_url": "https://img.itch.zone/aW1nLzE3NzYzMDE2LnBuZw==/315x250%23c/9VyUue.png",
+      "author": "marialuiza_pin",
+      "price": null,
+      "tags": [],
+      "short_description": "Gemshard",
+      "collection_name": "Laje",
+      "collection_url": "https://itch.io/c/7947320/laje"
+    },
+    {
+      "title": "Mito da Caverna",
+      "url": "https://pedraco.itch.io/mito-da-caverna",
+      "cover_url": "https://img.itch.zone/aW1nLzE3NzUyNzI0LnBuZw==/315x250%23c/mi2EUo.png",
+      "author": "pedraco",
+      "price": null,
+      "tags": [],
+      "short_description": null,
+      "collection_name": "Laje",
+      "collection_url": "https://itch.io/c/7947320/laje"
+    },
+    {
+      "title": "Yolk of Treasure",
+      "url": "https://amai-nikaido.itch.io/yolk-of-treasure",
+      "cover_url": "https://img.itch.zone/aW1nLzE3NzU0MTAwLnBuZw==/315x250%23c/pfy4SL.png",
+      "author": "Amai Nikaido",
+      "price": null,
+      "tags": [],
+      "short_description": "Ajude Luquinhas coletando gemas que cairam na fazenda de seu pai. Um dia de coleta não poderia ser mais tranquilo.",
+      "collection_name": "Laje",
+      "collection_url": "https://itch.io/c/7947320/laje"
+    },
+    {
+      "title": "Game Gema",
+      "url": "https://corvodev.itch.io/game-gema",
+      "cover_url": "https://img.itch.zone/aW1nLzE3NzUzODQxLmpwZw==/315x250%23c/zh7AP2.jpg",
+      "author": "CorvoDev",
+      "price": null,
+      "tags": [],
+      "short_description": null,
+      "collection_name": "Laje",
+      "collection_url": "https://itch.io/c/7947320/laje"
+    },
+    {
+      "title": "Missão Fogaréu",
+      "url": "https://rafahgol.itch.io/missao-fogareu",
+      "cover_url": "https://img.itch.zone/aW1nLzEyOTg0MDk2LnBuZw==/315x250%23c/y1JGEK.png",
+      "author": "Rafahgol",
+      "price": null,
+      "tags": [],
+      "short_description": null,
+      "collection_name": "Laje",
+      "collection_url": "https://itch.io/c/7947320/laje"
+    },
+    {
+      "title": "Sintonia",
+      "url": "https://juliateixeira.itch.io/sintonia",
+      "cover_url": "https://img.itch.zone/aW1nLzEyOTY0MTg5LnBuZw==/315x250%23c/5583%2FX.png",
+      "author": "July Teixeira",
+      "price": null,
+      "tags": [],
+      "short_description": "Jogo produzido para Laje 2023. Tema: Perigo.",
+      "collection_name": "Laje",
+      "collection_url": "https://itch.io/c/7947320/laje"
+    },
+    {
+      "title": "Yatra",
+      "url": "https://nancoardo.itch.io/yatra",
+      "cover_url": "https://img.itch.zone/aW1nLzEyOTc5ODE5LnBuZw==/315x250%23c/7qCGBR.png",
+      "author": "Nana Branco",
+      "price": null,
+      "tags": [],
+      "short_description": "Uma história sobre o perigo em diferentes pontos de vista.",
+      "collection_name": "Laje",
+      "collection_url": "https://itch.io/c/7947320/laje"
+    },
+    {
+      "title": "Boa Noite Sofia",
+      "url": "https://sortazar.itch.io/boanoitesofia",
+      "cover_url": "https://img.itch.zone/aW1nLzEyOTgzODI3LmpwZw==/315x250%23c/E2BHYK.jpg",
+      "author": "Sortazar",
+      "price": null,
+      "tags": [],
+      "short_description": "Ajude sofia a escapar do temido Bicho Papão nesse sidescroller 2d",
+      "collection_name": "Laje",
+      "collection_url": "https://itch.io/c/7947320/laje"
+    },
+    {
+      "title": "Cuidado! que a Cuca vai te pegar",
+      "url": "https://git-merege.itch.io/cuidado-que-a-cuca-vai-te-pegar",
+      "cover_url": "https://img.itch.zone/aW1nLzEzMDQ0MzAzLmpwZw==/315x250%23c/ISu8BD.jpg",
+      "author": "Luciana",
+      "price": null,
+      "tags": [],
+      "short_description": "Entrada para a game jam da Laje 2023",
+      "collection_name": "Laje",
+      "collection_url": "https://itch.io/c/7947320/laje"
+    },
+    {
+      "title": "Uma Noite No Sanatório",
+      "url": "https://rodrigoguzman.itch.io/uma-noite-no-sanatrio",
+      "cover_url": "https://img.itch.zone/aW1nLzEyOTgyOTg3LmpwZWc=/315x250%23c/j0tN8Z.jpeg",
+      "author": "RodrigoGuzman",
+      "price": null,
+      "tags": [],
+      "short_description": "O jogo se passa em um sanatório macabro.",
+      "collection_name": "Laje",
+      "collection_url": "https://itch.io/c/7947320/laje"
+    },
+    {
+      "title": "O rato e a fera",
+      "url": "https://shiranade.itch.io/o-rato-e-a-fera",
+      "cover_url": "https://img.itch.zone/aW1nLzEyOTg0MDAyLmpwZw==/315x250%23c/9PxmnB.jpg",
+      "author": "shiranade",
+      "price": null,
+      "tags": [],
+      "short_description": "Jogo pra Laje-2023 sob a temática perigo. O jogo simularia a tensão do perigo dentro do covil da bruxa.",
+      "collection_name": "Laje",
+      "collection_url": "https://itch.io/c/7947320/laje"
+    },
+    {
+      "title": "Ansidio",
+      "url": "https://lenrri.itch.io/ansidio",
+      "cover_url": "https://img.itch.zone/aW1nLzEyOTgzNTk3LnBuZw==/315x250%23c/Ixb294.png",
+      "author": "Lenrri",
+      "price": null,
+      "tags": [],
+      "short_description": null,
+      "collection_name": "Laje",
+      "collection_url": "https://itch.io/c/7947320/laje"
+    },
+    {
+      "title": "Apagão",
+      "url": "https://jvbarretods.itch.io/apagao",
+      "cover_url": "https://img.itch.zone/aW1nLzEyOTgzNTU1LnBuZw==/315x250%23c/xdbF1s.png",
+      "author": "Jvbarretods",
+      "price": null,
+      "tags": [],
+      "short_description": null,
+      "collection_name": "Laje",
+      "collection_url": "https://itch.io/c/7947320/laje"
+    },
+    {
+      "title": "Ida",
+      "url": "https://igordelfino.itch.io/ida",
+      "cover_url": "https://img.itch.zone/aW1nLzk3NjExMDAucG5n/315x250%23c/M3dNwn.png",
+      "author": "Igor Delfino",
+      "price": null,
+      "tags": [],
+      "short_description": "Um jogo sobre memórias e mudanças.",
+      "collection_name": "Laje",
+      "collection_url": "https://itch.io/c/7947320/laje"
+    },
+    {
+      "title": "Kami Masters",
+      "url": "https://cehaga.itch.io/kami-masters",
+      "cover_url": "https://img.itch.zone/aW1nLzk3NjAwMjYucG5n/315x250%23c/AsUslL.png",
+      "author": "CeHaga",
+      "price": null,
+      "tags": [],
+      "short_description": null,
+      "collection_name": "Laje",
+      "collection_url": "https://itch.io/c/7947320/laje"
+    },
+    {
+      "title": "Transformalien",
+      "url": "https://txera.itch.io/transformalien",
+      "cover_url": "https://img.itch.zone/aW1nLzk3NjA1MTUuanBn/315x250%23c/iWEhua.jpg",
+      "author": "txera",
+      "price": null,
+      "tags": [],
+      "short_description": "Você é um Alien com a habilidade de metamorfose. Utilize isso pra matar o máximo de inimigos possível",
+      "collection_name": "Laje",
+      "collection_url": "https://itch.io/c/7947320/laje"
+    },
+    {
+      "title": "Origame",
+      "url": "https://maduvenancio.itch.io/origame",
+      "cover_url": "https://img.itch.zone/aW1nLzk3NjA0MTIucG5n/315x250%23c/HfepJe.png",
+      "author": "Madu Venancio",
+      "price": null,
+      "tags": [],
+      "short_description": "Protótipo de um platformer  feito para o LAJE 2022!",
+      "collection_name": "Laje",
+      "collection_url": "https://itch.io/c/7947320/laje"
+    },
+    {
+      "title": "Winds of Change",
+      "url": "https://jullysaw.itch.io/winds-of-change",
+      "cover_url": "https://img.itch.zone/aW1nLzk3NTk4MTgucG5n/315x250%23c/TV82Q%2B.png",
+      "author": "JullySaw",
+      "price": null,
+      "tags": [],
+      "short_description": null,
+      "collection_name": "Laje",
+      "collection_url": "https://itch.io/c/7947320/laje"
+    },
+    {
+      "title": "Como um rio",
+      "url": "https://jmriver.itch.io/como-um-rio",
+      "cover_url": "https://img.itch.zone/aW1nLzk3NjAzNjMucG5n/315x250%23c/sbKL2R.png",
+      "author": "JMRiver",
+      "price": null,
+      "tags": [],
+      "short_description": "Enfrentar a si mesmo é um pouco angustiante. Felizmente, pode lavar a alma como um rio.",
+      "collection_name": "Laje",
+      "collection_url": "https://itch.io/c/7947320/laje"
+    },
+    {
+      "title": "Gachamorfose",
+      "url": "https://gartnik.itch.io/gachamorfose",
+      "cover_url": "https://img.itch.zone/aW1nLzk3NjA4NjMucG5n/315x250%23c/gRagfC.png",
+      "author": "Amelia Pungartnik",
+      "price": null,
+      "tags": [],
+      "short_description": "versão quebrada pela Unity",
+      "collection_name": "Laje",
+      "collection_url": "https://itch.io/c/7947320/laje"
+    },
+    {
+      "title": "CADENTE",
+      "url": "https://slaziel.itch.io/cadente",
+      "cover_url": "https://img.itch.zone/aW1nLzY0MjQ0OTMucG5n/315x250%23c/mRD0wx.png",
+      "author": "Slaziel",
+      "price": null,
+      "tags": [],
+      "short_description": "Jogo de plataforma retrô feito em pixelart!",
+      "collection_name": "Laje",
+      "collection_url": "https://itch.io/c/7947320/laje"
+    },
+    {
+      "title": "MindLand",
+      "url": "https://feblanchard.itch.io/mindland",
+      "cover_url": "https://img.itch.zone/aW1nLzY0MjU0MzIuanBn/315x250%23c/lGnjhM.jpg",
+      "author": "feblanchard",
+      "price": null,
+      "tags": [],
+      "short_description": "Conheça a si mesmo.",
+      "collection_name": "Laje",
+      "collection_url": "https://itch.io/c/7947320/laje"
     }
   ],
-  "total": 128,
+  "total": 158,
   "collections_summary": [
     {
       "name": "Projetos Internos",
@@ -1444,6 +1774,11 @@
     {
       "name": "Processos Seletivos Ps",
       "url": "https://itch.io/c/7954783/processos-seletivos-ps",
+      "game_count": 30
+    },
+    {
+      "name": "Laje",
+      "url": "https://itch.io/c/7947320/laje",
       "game_count": 30
     }
   ]
