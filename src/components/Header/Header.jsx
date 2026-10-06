@@ -5,14 +5,20 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <header className={styles.header}>
-      <img className="svg_light" src={gdpLogo} width={138} height={138} alt="Logo GDP" />
+      <img
+        className="svg_light"
+        src={gdpLogo}
+        width={138}
+        height={138}
+        alt="Logo GDP"
+      />
       <ul className={styles.buttons_container}>
         <li>
           <Link to="/">Home</Link>
         </li>
 
         <li>
-          <a href="/projetos">Projetos</a>
+          <Link to="/projetos">Projetos</Link>
         </li>
 
         <li>
@@ -20,7 +26,7 @@ const Header = () => {
         </li>
 
         <li>
-          <a href="/estudios">Estúdios</a>
+          <Link to="/estudios">Estúdios</Link>
         </li>
       </ul>
     </header>
