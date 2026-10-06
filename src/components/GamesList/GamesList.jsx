@@ -1,3 +1,4 @@
+import { useState } from "react";
 import styles from "./GamesList.module.css";
 
 function checkCategory(collection_name, category) {
@@ -26,7 +27,7 @@ function checkCategory(collection_name, category) {
     case "PS":
       return collection_name === "Processos Seletivos Ps";
 
-    case "LAJE":
+    case "Laje":
       return collection_name === "Laje";
 
     default:
@@ -34,16 +35,23 @@ function checkCategory(collection_name, category) {
   }
 }
 
-const GamesList = ({ games, category, currentPage, setCurrentPage }) => {
+const GamesList = ({ games, category }) => {
+  const [currentPage, setCurrentPage] = useState(1);
+
   const gamesPerPage = 9;
 
   const filteredGames = games.filter((item) =>
     checkCategory(item.collection_name, category),
   );
 
-  const totalPages = Math.ceil(filteredGames.length / gamesPerPage);
+  const totalPages = Math.max(
+    1,
+    Math.ceil(filteredGames.length / gamesPerPage),
+  );
 
-  const startIndex = (currentPage - 1) * gamesPerPage;
+  const safeCurrentPage = Math.min(currentPage, totalPages);
+
+  const startIndex = (safeCurrentPage - 1) * gamesPerPage;
 
   const currentGames = filteredGames.slice(
     startIndex,
@@ -55,7 +63,12 @@ const GamesList = ({ games, category, currentPage, setCurrentPage }) => {
       <ul className={styles.gameslist}>
         {currentGames.map((item) => (
           <li key={item.url}>
-            <a href={item.url} aria-label={item.title} target="_blank">
+            <a
+              href={item.url}
+              aria-label={item.title}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src={item.cover_url} alt={`Capa ${item.title}`} />
             </a>
 
@@ -68,7 +81,7 @@ const GamesList = ({ games, category, currentPage, setCurrentPage }) => {
         <div className={styles.pagination}>
           <button
             onClick={() => setCurrentPage((page) => Math.max(page - 1, 1))}
-            disabled={currentPage === 1}
+            disabled={safeCurrentPage === 1}
           >
             Anterior
           </button>
@@ -80,7 +93,7 @@ const GamesList = ({ games, category, currentPage, setCurrentPage }) => {
               <button
                 key={page}
                 onClick={() => setCurrentPage(page)}
-                className={currentPage === page ? styles.activePage : ""}
+                className={safeCurrentPage === page ? styles.activePage : ""}
               >
                 {page}
               </button>
@@ -91,7 +104,7 @@ const GamesList = ({ games, category, currentPage, setCurrentPage }) => {
             onClick={() =>
               setCurrentPage((page) => Math.min(page + 1, totalPages))
             }
-            disabled={currentPage === totalPages}
+            disabled={safeCurrentPage === totalPages}
           >
             Próxima
           </button>
