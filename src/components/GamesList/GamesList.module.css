@@ -60,7 +60,7 @@
 .gameslist a {
     display: block;
     width: 100%;
-    border-radius: 2rem;
+    border-radius: var(--CARD-border-radius);
     /* overflow: hidden; */
     transition:
         transform 0.25s ease,

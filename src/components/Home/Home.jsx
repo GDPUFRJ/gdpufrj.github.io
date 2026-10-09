@@ -8,30 +8,50 @@ import cardProgramacao from "../../assets/areas/card_programacao.svg";
 import cardRoteiro from "../../assets/areas/card_roteiro.svg";
 import cardSom from "../../assets/areas/card_som.svg";
 
+import imgProg from "../../assets/areas/SimboloProg.png";
+import imgArte from "../../assets/areas/SimboloArte.png";
+import imgGD from "../../assets/areas/SimboloGD.png";
+import imgRoteiro from "../../assets/areas/SimboloRoteiro.png";
+import imgSom from "../../assets/areas/SimboloSom.png";
+import imgProducao from "../../assets/areas/SimboloProducao.png";
+
+
 const areaCards = [
   {
     name: "Programação",
-    image: cardProgramacao,
+    image: imgProg,
+    color: "text_prog",
+    text: "Responsável por implementar sistemas, mecânicas e assets desenvolvidos pelo time."
   },
   {
     name: "Arte",
-    image: cardArte,
+    image: imgArte,
+    color: "text_art",
+    text: "Responsável em criar os assets visuais do jogo. Do 2D ao 3D, do visual das personagens aos cenários e até UI do jogo."
   },
   {
     name: "Game Design",
-    image: cardGD,
+    image: imgGD,
+    color: "text_gd",
+    text: "Também conhecido como arquiteto do jogo. Planeja as mecânicas e funcionalidades pensando como os jogadores interagirão com o jogo."
   },
   {
     name: "Roteiro",
-    image: cardRoteiro,
+    image: imgRoteiro,
+    color: "text_roteiro",
+    text: "Desenvolve toda a parte narrativa, desde diálogos, personagens e até a construção do mundo em que se passa o jogo."
   },
   {
     name: "Sonorização",
-    image: cardSom,
+    image: imgSom,
+    color: "text_som",
+    text: "Responsável em criar os assets sonoros do jogo, desde SFX até músicas próprias para compor a trilha sonora."
   },
   {
     name: "Produção",
-    image: cardProducao,
+    image: imgProducao,
+    color: "text_producao",
+    text: "Quem organiza a equipe, cuidando do escopo do projeto e das tarefas de cada integrante. Esse cargo é apenas para quem já está algum tempo dentro da GDP."
   },
 ];
 
@@ -77,7 +97,12 @@ const Home = () => {
           <ul className={styles.areas}>
             {areaCards.map((card) => (
               <li key={card.name}>
+                
                 <img src={card.image} alt={`Área de atuação: ${card.name}`} />
+                <div className={styles.area_cards}>
+                  <h2 className={card.color}>{card.name}</h2>
+                  <p>{card.text}</p>
+                </div>
               </li>
             ))}
           </ul>

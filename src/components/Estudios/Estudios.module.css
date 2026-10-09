@@ -39,7 +39,7 @@
 .estudios_card {
     background-color: var(--LIGHT-Card);
     min-width: 435px;
-    border-radius: 2rem;
+    border-radius: var(--CARD-border-radius);
     padding: 2.5em 2em;
     gap: 1.5em;
     display: flex;

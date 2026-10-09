@@ -65,7 +65,7 @@
 }
 
 .areas_description {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto 1.5rem;
     font-size: clamp(1rem, 1.3vw, 1.25rem);
     line-height: 1.5;
@@ -80,8 +80,25 @@
 }
 
 .areas li img {
-    width: 100%;
-    display: block;
+    
+}
+
+.area_cards{
+    flex-direction: column;
+    background-color: var(--LIGHT-Card);
+    border-radius: var(--CARD-border-radius);
+    padding: 1rem 2rem 2rem;
+}
+
+.area_cards h2{
+    margin: 0;
+    text-shadow: 3px 3px 1px var(--LIGHT-Important-Text-Color);
+}
+
+.area_cards p{
+    font-size: clamp(1rem, 1.3vw, 1.25rem);
+    line-height: 1.5;
+    color: var(--LIGHT-Text-Color);
 }
 
 @media (max-width: 1200px) {
