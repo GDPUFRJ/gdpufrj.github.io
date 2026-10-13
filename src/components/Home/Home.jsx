@@ -21,7 +21,7 @@ const areaCards = [
     name: "Programação",
     image: imgProg,
     color: "text_prog",
-    text: "Responsável por implementar sistemas, mecânicas e assets desenvolvidos pelo time."
+    text: "Com o auxílio de Game Engines, implementa sistemas, mecânicas e assets desenvolvidos pelo time."
   },
   {
     name: "Arte",
@@ -51,7 +51,7 @@ const areaCards = [
     name: "Produção",
     image: imgProducao,
     color: "text_producao",
-    text: "Quem organiza a equipe, cuidando do escopo do projeto e das tarefas de cada integrante. Esse cargo é apenas para quem já está algum tempo dentro da GDP."
+    text: "Quem organiza a equipe, cuidando do escopo do projeto e das tarefas de cada integrante. Esse cargo é apenas para quem já está algum tempo na GDP."
   },
 ];
 
@@ -85,10 +85,10 @@ const Home = () => {
           </div>
         </div>
 
-        <section className={styles.areas_section}>
+        <section className={styles.section_info}>
           <h2>Áreas de Atuação</h2>
 
-          <p className={styles.areas_description}>
+          <p>
             Dentro da GDP, integrantes se juntam em grupos (entre 8 a 12
             pessoas) para poder trabalhar num projeto de jogo e cada integrante
             assume um cargo dentro da equipe para tornar o jogo uma realidade.
@@ -107,6 +107,21 @@ const Home = () => {
             ))}
           </ul>
         </section>
+
+        {/* <section className={styles.section_info}>
+          <h2>Gestões e Setores</h2>
+
+          <p>
+            Texto
+          </p>
+
+          <ul className={styles.management_section}>
+            <li>
+                <img src="" alt="" />
+              
+            </li>
+          </ul>
+        </section> */}
       </section>
     </main>
   );
