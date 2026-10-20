@@ -53,20 +53,20 @@
 }
 
 
-.areas_section {
+.section_info {
     margin-top: 2rem;
     text-align: center;
 }
 
-.areas_section h2 {
+.section_info h2 {
     font-size: clamp(1.75rem, 3vw, 2.5rem);
     margin-bottom: 1rem;
     color: var(--LIGHT-Important-Text-Color);
 }
 
-.areas_description {
-    max-width: 800px;
-    margin: 0 auto 1.5rem;
+.section_info p{
+    max-width: 1000px;
+    margin: 0 auto;
     font-size: clamp(1rem, 1.3vw, 1.25rem);
     line-height: 1.5;
     color: var(--LIGHT-Text-Color);
@@ -76,12 +76,77 @@
     list-style: none;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: 0rem 2rem;
 }
 
-.areas li img {
-    width: 100%;
-    display: block;
+.areas img{
+    position: relative;
+    top: 2.8rem;
+    height: 170px;
+}
+
+.area_card{
+    flex-direction: column;
+    background-color: var(--LIGHT-Card);
+    border-radius: var(--CARD-border-radius);
+    
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+}
+
+.area_card h2{
+    margin: 0;
+    text-shadow: 3px 3px 1px var(--LIGHT-Important-Text-Color);
+}
+
+.area_card p{
+    font-size: clamp(1rem, 1.3vw, 1.25rem);
+    line-height: 1.5;
+    color: var(--LIGHT-Text-Color);
+}
+
+.management_section {
+    padding-top: 2em;
+    list-style: none;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.management_card {
+    max-width: 550px;
+    background-color: var(--LIGHT-Card);
+    border-radius: var(--CARD-border-radius);
+    padding: 2em 2em;
+    gap: 1.5em;
+    display: flex;
+    align-items: center;
+}
+
+.management_card img{
+    height: 170px;
+}
+
+.management_info {
+    text-align: left;
+}
+
+.management_info h2{
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    margin-bottom: 0.5rem;
+    color: var(--LIGHT-Important-Text-Color);
+}
+
+.management_info p{
+    font-size: clamp(1rem, 1.3vw, 1.25rem);
+    line-height: 1.5;
+    color: var(--LIGHT-Text-Color);
 }
 
 @media (max-width: 1200px) {
@@ -106,5 +171,6 @@
 @media (max-width: 730px) {
     .areas {
         grid-template-columns: 1fr;
+        padding: 1rem 4rem;
     }
 }

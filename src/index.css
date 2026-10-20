@@ -20,6 +20,8 @@
   --SHADOW: rgba(0, 0, 0, 0.24);
 
   --font-primary: "Outfit", sans-serif;
+
+  --CARD-border-radius: 2rem;
 }
 
 * {
@@ -40,4 +42,28 @@ body {
 
 .svg_dark {
   filter: invert(0%) sepia(2%) saturate(1308%) hue-rotate(317deg) brightness(96%) contrast(87%);
+}
+
+.text_prog{
+  color: var(--gdp-azul) !important;
+}
+
+.text_art{
+  color: var(--gdp-vermelho) !important;
+}
+
+.text_gd{
+  color: var(--gdp-gd) !important;
+}
+
+.text_roteiro{
+  color: var(--gdp-roteiro) !important;
+}
+
+.text_som{
+  color: var(--gdp-som) !important;
+}
+
+.text_producao{
+  color: var(--gdp-amarelo) !important;
 }

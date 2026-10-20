@@ -1,3 +1,4 @@
+import { useState } from "react";
 import styles from "./GamesList.module.css";
 import capaDefault from "../../assets/capa_default.png";
 
@@ -37,11 +38,16 @@ function checkCategory(collection_name, category) {
 
 const GamesList = ({
   games,
-  category,
-  search = "",
-  currentPage,
-  setCurrentPage,
+  category
 }) => {
+  const [search, setSearch] = useState("");
+  const [currentPage, setCurrentPage] = useState(1);
+
+  function handleSearch(event) {
+    setSearch(event.target.value);
+    setCurrentPage(1);
+  }
+
   const gamesPerPage = 9;
 
   const filteredGames = games.filter((item) => {
@@ -69,60 +75,72 @@ const GamesList = ({
   );
 
   return (
-    <section className={styles.content}>
-      {filteredGames.length > 0 ? (
-        <ul className={styles.gameslist}>
-          {currentGames.map((item) => (
-            <li key={item.url}>
-              <a href={item.url} aria-label={item.title} target="_blank">
-                <img
-                  src={item.cover_url ? item.cover_url : capaDefault}
-                  alt={`Capa ${item.title}`}
-                />
-              </a>
+    <div>
+      <div className={styles.search_container}>
+              <input
+                type="text"
+                placeholder="Pesquisa..."
+                value={search}
+                onChange={handleSearch}
+                className={styles.search_input}
+              />
+      </div>
 
-              <h2>{item.title}</h2>
-            </li>
-          ))}
-        </ul>
-      ) : (
-        <p className={styles.noResults}>Nenhum projeto encontrado.</p>
-      )}
+      <section className={styles.content}>
+        {filteredGames.length > 0 ? (
+          <ul className={styles.gameslist}>
+            {currentGames.map((item) => (
+              <li key={item.url}>
+                <a href={item.url} aria-label={item.title} target="_blank">
+                  <img
+                    src={item.cover_url ? item.cover_url : capaDefault}
+                    alt={`Capa ${item.title}`}
+                  />
+                </a>
 
-      {totalPages > 1 && (
-        <div className={styles.pagination}>
-          <button
-            onClick={() => setCurrentPage((page) => Math.max(page - 1, 1))}
-            disabled={safeCurrentPage === 1}
-          >
-            Anterior
-          </button>
+                <h2>{item.title}</h2>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <h2 className={styles.noResults}>Nenhum projeto encontrado.</h2>
+        )}
 
-          {Array.from({ length: totalPages }, (_, index) => {
-            const page = index + 1;
+        {totalPages > 1 && (
+          <div className={styles.pagination}>
+            <button
+              onClick={() => setCurrentPage((page) => Math.max(page - 1, 1))}
+              disabled={safeCurrentPage === 1}
+            >
+              Anterior
+            </button>
 
-            return (
-              <button
-                key={page}
-                onClick={() => setCurrentPage(page)}
-                className={safeCurrentPage === page ? styles.activePage : ""}
-              >
-                {page}
-              </button>
-            );
-          })}
+            {Array.from({ length: totalPages }, (_, index) => {
+              const page = index + 1;
 
-          <button
-            onClick={() =>
-              setCurrentPage((page) => Math.min(page + 1, totalPages))
-            }
-            disabled={safeCurrentPage === totalPages}
-          >
-            Próxima
-          </button>
-        </div>
-      )}
-    </section>
+              return (
+                <button
+                  key={page}
+                  onClick={() => setCurrentPage(page)}
+                  className={safeCurrentPage === page ? styles.activePage : ""}
+                >
+                  {page}
+                </button>
+              );
+            })}
+
+            <button
+              onClick={() =>
+                setCurrentPage((page) => Math.min(page + 1, totalPages))
+              }
+              disabled={safeCurrentPage === totalPages}
+            >
+              Próxima
+            </button>
+          </div>
+        )}
+      </section>
+    </div>
   );
 };
 
