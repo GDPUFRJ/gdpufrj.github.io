@@ -28,7 +28,7 @@ const Projetos = ({ games }) => {
         setExplication("Projetos realizados em conjunto com outros grupos e/ou instituições.");
         break;
       case "Eventos":
-        setExplication("Projetos desenvolvidos por participantes dos eventos organizados pela GDP.Os jogos feitos na LAJE estão presentes exclusivamente na página LAJE do site.");
+        setExplication("Projetos desenvolvidos por participantes dos eventos organizados pela GDP. Os jogos feitos na LAJE estão presentes exclusivamente na página LAJE do site.");
         break;
       case "PS":
         setExplication("Projetos desenvolvidos pelos participantes dos nossos Processos Seletivos para ingressar na GDP.");

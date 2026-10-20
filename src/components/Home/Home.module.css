@@ -85,7 +85,7 @@
     height: 170px;
 }
 
-.area_cards{
+.area_card{
     flex-direction: column;
     background-color: var(--LIGHT-Card);
     border-radius: var(--CARD-border-radius);
@@ -96,35 +96,57 @@
     padding-bottom: 1rem;
 }
 
-.area_cards h2{
+.area_card h2{
     margin: 0;
     text-shadow: 3px 3px 1px var(--LIGHT-Important-Text-Color);
 }
 
-.area_cards p{
+.area_card p{
     font-size: clamp(1rem, 1.3vw, 1.25rem);
     line-height: 1.5;
     color: var(--LIGHT-Text-Color);
-    flex: 2;
 }
 
 .management_section {
+    padding-top: 2em;
     list-style: none;
-    max-width: 1000px;
+    max-width: 1300px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 2rem;
+    justify-content: center;
+    gap: 1.5rem;
 }
 
 .management_card {
+    max-width: 550px;
     background-color: var(--LIGHT-Card);
     border-radius: var(--CARD-border-radius);
-    padding: 2.5em 2em;
+    padding: 2em 2em;
     gap: 1.5em;
     display: flex;
+    align-items: center;
+}
+
+.management_card img{
+    height: 170px;
+}
+
+.management_info {
+    text-align: left;
+}
+
+.management_info h2{
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    margin-bottom: 0.5rem;
+    color: var(--LIGHT-Important-Text-Color);
+}
+
+.management_info p{
+    font-size: clamp(1rem, 1.3vw, 1.25rem);
+    line-height: 1.5;
+    color: var(--LIGHT-Text-Color);
 }
 
 @media (max-width: 1200px) {
